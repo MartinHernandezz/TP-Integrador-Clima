@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUP LC2 - TP Integrador</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="CSS/pages/help.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="Climaxs.png" alt="">
+            <span>Clima App</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Clima</a></li>
+                <li><a href="add-city.html">Agregar Ciudad</a></li>
+                <li class="current-page"><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="info">
+            <h2>Ayuda Clima App v.1.0</h2>
+            <p>Esta App te permite consultar el clima de una ciudad en particular utilizando la<br>
+                API de <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></p>
+            <p>Para poder consultar el clima, primero debera <a href="#">Agregar una Ciudad</a> y luego <br>
+                seleccionar la Ciudad en cuestion desde la pagina <a href="#">Clima</a></p>
+        </div>
+
+        <section id="form-city-list">
+            <form action="Lista">
+                <p>Nombre:</p>
+                <input class="ingresos" type="text">
+                <p>Email: </p>
+                <input class="ingresos" type="email">
+                <label for="Textarea">Mensaje:</label>
+                <textarea name="Mensaje" id="Textareaa" cols="30" rows="10"> </textarea>
+                <div class="botones">
+                    <input class="boton" type="submit" value="Enviar">
+                    <input class="boton" type="reset" value="Limpiar">
+                </div>
+            </form>
+        </section>
+
+        <section class="resultado alertas" id="section-weather-result">
+            <p>Ingrese un Email valido</p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
+        </p>
+    </footer>
+</body>
+
+</html>

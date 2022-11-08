@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUP LC2 - TP Integrador</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="CSS/pages/add-city.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>
+                <img src="Climaxs.png" alt="">
+                <span>Clima App</span>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Clima</a></li>
+                    <li class="current-page"><a href="#">Agregar Ciudad</a></li>
+                    <li><a href="help.html">Ayuda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+        <h2>Agregar Ciudad</h2>
+        <section>
+            <form id="form-city-list" action="Ciudad">
+                <p>Ingrese la ciudad a agregar: </p>
+                <input id="inputCiudades" type="text" name="Agregar">
+                <button type="submit" id="jj">Agregar</button>
+            </form>
+        </section>
+
+        <div class="Agregada alertas">
+            <p>Ciudad agregada con exito</p>
+        </div>
+        <div class="error alertas">
+            <p>Error: La ciudad ingresad no se encuentra en la API o se produjo un error al consultar</p>
+        </div>
+        <div class="Ingresada alertas">
+            <p>La ciudad ingresa ya se encuentra almacenada</p>
+        </div>
+        <section id="section-weather-result">
+            <!-- Sección donde se debe mostrar el clima de la ciudad -->
+        </section>
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
+        </p>
+    </footer>
+</body>
+
+<script src="js/common.js" type="module"></script>
+<script src="js/pages/add-city.js" type="module"></script>
+
+</html>
